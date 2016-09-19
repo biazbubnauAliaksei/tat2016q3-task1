@@ -1,13 +1,13 @@
 Google search page:	 
 
 	query input:	.//input[@id='gs_htif0']
-					input#gs_htif0
+			input#gs_htif0
 
 	‘search in Google’ button:	.//input[@name='btnK']
-								input[name=btnK]
+					input[name=btnK]
 
 	“I am lucky!’ button:	.//input[@name='btnI']	
-							input[name=btnI]
+				input[name=btnI]
 
 	Search for “nyan cat” and create a locator that returns ALL 10 result links (see screenshot):
 				//h3[@class='r']/a|//div[contains(@class, '_Icb')]/a
@@ -15,79 +15,79 @@ Google search page:
 
 
 	n-th ‘o’ letter in Goooooooooogle   (n = 1...10):
-		.//*[@id='nav']//td[n]/a/span  	where 'n' - number number (1-10)+1 by requirement
-		#nav>tbody>tr td:nth-child(n) span		where 'n' - number number (1-10)+1 by requirement
+		.//*[@id='nav']//td[n]/a/span  		where 'n' - number number (1-10)+1 by requirement
+		#nav>tbody>tr td:nth-child(n) span	where 'n' - number number (1-10)+1 by requirement
 _______________________________________________________________________________________________________________________
 Mail.ru login page:
 
 
 	login input:	.//input[@id='mailbox__login']
-					input#mailbox__login
+			input#mailbox__login
 
 	password input:		.//input[@id='mailbox__password']
-						input#mailbox__password
+				input#mailbox__password
 
 	‘Enter’ button:		.//input[@id='mailbox__auth__button']
-						input#mailbox__auth__button
+				input#mailbox__auth__button
 ------------------------------------------------------------------------------------------------------------------------
 Mail.ru main page (logged in):
 
 
 	links to folders 
 		incoming:	.//div[@data-id='0']/a
-					div[data-id='0'] a
+				div[data-id='0'] a
 
 		outcoming:	.//div[@data-id='500000']/a
-					div[data-id='500000'] a
+				div[data-id='500000'] a
 
 		spam:	.//div[@data-id='950']/a
-				div[data-id='950'] a
+			div[data-id='950'] a
 
 		deleted:	.//div[@data-id='500002']/a
-					div[data-id='500002'] a
+				div[data-id='500002'] a
 
 		drafts:		.//div[@data-id='500001']/a
-					div[data-id='500001'] a
+				div[data-id='500001'] a
 -------------------------------------------------------------------------------------------------------------------------
 Action buttons:
 
 	write new letter:	//div[@id='b-toolbar__left']//a[@data-name='compose']
-						div#b-toolbar__left>div a
+				div#b-toolbar__left>div a
 
 	delete:		.//div[@id='b-toolbar__right']//div[@data-name='remove']
-				div#b-toolbar__right>a[data-name='compose']
+			div#b-toolbar__right>a[data-name='compose']
 
 	mark as spam:	.//div[@id='b-toolbar__right']//div[@data-name='spam']
-					div#b-toolbar__right div[data-name='spam']
+			div#b-toolbar__right div[data-name='spam']
 
 	mark as not spam:	.//div[@id='b-toolbar__right']//div[@data-name='noSpam']
-						div#b-toolbar__right div[data-name='noSpam']
+				div#b-toolbar__right div[data-name='noSpam']
 
 	mark as read:	.//div[@id='b-toolbar__right']//a[@data-name='read']
-					div#b-toolbar__right a[data-name='read']
+			div#b-toolbar__right a[data-name='read']
 
 	move to another folder:		.//*[@id='b-toolbar__right']//div[@data-uniqid='toolkit-523']
-								div#b-toolbar__right div[data-uniqid='toolkit-523']
+					div#b-toolbar__right div[data-uniqid='toolkit-523']
 	
 
 Checkbox for one exact letter:		.//div[@class='b-datalist__body']/div[i]//div[@class='b-checkbox__box']		
-									div.b-datalist__body>div:nth-child(i) div.b-checkbox__box		where 'i' is 										number of message		
+					div.b-datalist__body>div:nth-child(i) div.b-checkbox__box	where 'i' is number of message		
 									
 
-Opening link for one exact letter:		.//div[@class='b-datalist__body']/div[i]//a 		where 'i' is number of message
-										div.b-datalist__body>div:nth-child(i) a
+Opening link for one exact letter:		.//div[@class='b-datalist__body']/div[i]//a 	where 'i' is number of message
+						div.b-datalist__body>div:nth-child(i) a
 ----------------------------------------------------------------------------------------------------------------------------	
 New letter page: 
 
 	inputs for address: 	.//textarea[@data-original-name='To']
-							textarea[data-original-name='To']
+				textarea[data-original-name='To']
 
 	input for topic:		 .//input[@name='Subject']
-							 input[name='Subject']
+					 input[name='Subject']
 
 	text: 		.//*[@id='tinymce']
-				*[id='tinymce']
+			*[id='tinymce']
 
 	file attach:		.//div[@id='compose__header__content']//input[@name='Filedata']
-						div#compose__header__content input[name='Filedata']
+				div#compose__header__content input[name='Filedata']
 						
