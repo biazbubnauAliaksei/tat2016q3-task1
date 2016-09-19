@@ -1,0 +1,14 @@
+# Ide's service files and dirs
+*.iml
+./idea/
+.project
+*idea*
+
+# Output directories, compiled files at all
+/out/
+/build/
+*.class
+*target
+
+# Vcs's service files and dirs
+./git/
