@@ -70,12 +70,12 @@ Action buttons:
 					div#b-toolbar__right div[data-uniqid='toolkit-523']
 	
 
-Checkbox for one exact letter:		.//div[@class='b-datalist__body']/div[i]//div[@class='b-checkbox__box']		
-					div.b-datalist__body>div:nth-child(i) div.b-checkbox__box	where 'i' is number of message		
+Checkbox for one exact letter:		//div[contains(@class, 'b-datalist__body')]/div[2]//div[contains(@class, 'b-checkbox__box')]
+					div[class^='b-datalist__body']>div:nth-child(2) div[class^='b-checkbox__box']	where 'i' is number of message		
 									
 
-Opening link for one exact letter:		.//div[@class='b-datalist__body']/div[i]//a 	where 'i' is number of message
-						div.b-datalist__body>div:nth-child(i) a
+Opening link for one exact letter:		.//div[contains(@class,'b-datalist__body')]/div[2]//a 	where 'i' is number of message
+						div[class^='b-datalist__body']>div:nth-child(2) a
 ----------------------------------------------------------------------------------------------------------------------------	
 New letter page: 
 
